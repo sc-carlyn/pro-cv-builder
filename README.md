@@ -1,4 +1,4 @@
-# Pro CV Builder
+# 📄 Pro CV Builder
 
 A professional and modern CV Builder web application that allows users to create customizable CVs with live preview, timeline for education and work experience, skill bars, logo/icons, drag & drop sections, PDF export, theme selection, and multi-language support (TR/EN).
 
