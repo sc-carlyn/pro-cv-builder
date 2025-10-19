@@ -41,11 +41,14 @@ Pro-CV-Builder/
 
 ## 🖼️ Screenshots
 
-### Form & Live Preview
-![Form & Live Preview](screenshots/form_preview.png)
+### Light Theme
+![Light Theme](screenshots/light.png)
 
-### PDF Export Example
-![PDF Export](screenshots/pdf_example.png)
+### Dark Theme
+![Dark Theme](screenshots/dark.png)
+
+### Corporate Theme
+![Corporate Theme](screenshots/corporate.png)
 
 ---
 
