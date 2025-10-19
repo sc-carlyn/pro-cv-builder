@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pro CV Builder</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+
+    <header>
+      <div class="controls">
+        <div class="lang-select">
+          <label for="language">Dil / Language:</label>
+          <select id="language">
+            <option value="tr" selected>TR</option>
+            <option value="en">EN</option>
+          </select>
+        </div>
+        <div class="theme-select">
+          <label for="theme">Tema / Theme:</label>
+          <select id="theme">
+            <option value="light" selected>Light</option>
+            <option value="dark">Dark</option>
+            <option value="corporate">Corporate</option>
+          </select>
+        </div>
+      </div>
+      <h1 id="mainHeader">📄 CV Oluşturucu</h1>
+      <p id="subHeader">Bilgilerinizi girin, CV’nizi anında görün!</p>
+    </header>
+
+    <main>
+      <section class="form-panel" id="formPanel">
+
+        <div class="draggable-section" data-section="personal">
+          <h2>Kişisel Bilgiler</h2>
+          <input type="text" id="fullName" placeholder="Ad Soyad">
+          <input type="text" id="email" placeholder="E-posta">
+          <input type="text" id="phone" placeholder="Telefon">
+        </div>
+
+        <div class="draggable-section" data-section="education">
+          <h2>Eğitim</h2>
+          <input type="text" class="eduInstitution" placeholder="Üniversite / Bölüm / Yıl">
+          <input type="file" class="eduLogo" accept="image/*">
+        </div>
+
+        <div class="draggable-section" data-section="experience">
+          <h2>İş Deneyimi</h2>
+          <input type="text" class="expCompany" placeholder="Şirket / Pozisyon / Yıl">
+          <input type="file" class="expLogo" accept="image/*">
+        </div>
+
+        <div class="draggable-section" data-section="skills">
+          <h2>Yetenekler</h2>
+          <input type="text" id="skills" placeholder="JavaScript, HTML, CSS">
+        </div>
+
+      </section>
+
+      <section class="preview-panel">
+        <h2>CV Önizleme</h2>
+        <div class="cv-preview" id="cvPreview">
+          <h1 id="cvName">Ad Soyad</h1>
+          <p id="cvContact">E-posta | Telefon</p>
+
+          <div class="timeline" id="cvEducationTimeline">
+            <h3>Eğitim</h3>
+          </div>
+
+          <div class="timeline" id="cvExperienceTimeline">
+            <h3>İş Deneyimi</h3>
+          </div>
+
+          <h3>Yetenekler</h3>
+          <div class="skills-preview" id="cvSkills"></div>
+        </div>
+
+        <div class="download-btn">
+          <button id="downloadBtn">CV’yi PDF İndir</button>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="themes.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
