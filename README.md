@@ -49,21 +49,6 @@ Pro-CV-Builder/
 
 ---
 
-## ⚙️ How to Use Locally
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/pro-cv-builder.git
-cd pro-cv-builder
-2. Open index.html in your preferred browser (Chrome, Firefox, Edge).
-3. Fill in your personal info, education, experience, skills.
-4. Drag & drop sections to reorder.
-5. Select your preferred theme and language.
-6. Preview your CV live and click "Download PDF" to export.
-
----
-
 ## ⚙️ Technologies Used
 
 - HTML5
